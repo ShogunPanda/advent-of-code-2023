@@ -86,9 +86,6 @@ export async function main() {
 
     // We found the loop. Get the loop characteristic
     const loopSize = i - cache[key]
-    const loopOffset = i - loopSize
-
-    console.log(loopOffset, loopSize)
 
     // Now compute how many
     const remaining = maximumCycles - i

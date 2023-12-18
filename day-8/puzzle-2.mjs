@@ -49,7 +49,7 @@ export async function main() {
 
   for (let i = 1; i < allSteps.length; i++) {
     current = (allSteps[i] * current) / gcd(allSteps[i], current)
-    console.log(allSteps[i], current, gcd(allSteps[i], current))
+    allSteps[i], current, gcd(allSteps[i], current)
   }
 
   return current
