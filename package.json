@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "exec": "node --watch-path . -- run.mjs",
+    "create": "mkdir -p day-$DAY; cp template.mjs day-$DAY/puzzle-1.mjs; cp template.mjs day-$DAY/puzzle-2.mjs; touch day-$DAY/input.txt",
+    "format": "prettier -w .",
+    "lint": "eslint --cache --ext .mjs ."
+  },
+  "devDependencies": {
+    "@cowtech/eslint-config": "^8.10.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  }
+}
